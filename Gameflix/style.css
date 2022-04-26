@@ -1,0 +1,101 @@
+:root{
+    --verde:#0AB824;
+    --preto:#3B3B3B;
+    --branco:#FFFFFF;
+}
+
+/*elementos principais*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preto);
+    font-family: Arial;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--verde);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    margin-left: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+}
+
+/*Jogo Principal*/
+
+.jogo_principal {
+    font-size: 25px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url(./imgs/Forza\ Hoirzon\ 5.jpg);
+    height: 800px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.jogo_principal .descricao {
+    margin-bottom: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.jogo_principal .titulo_forza {
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: var(--verde);
+    color: var(--preto);
+    border: none;
+    padding: 15px 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    margin-right: 5px;
+    transition: .5s ease all;
+    margin-bottom: 5px;
+}
+
+.botao:hover {
+   background-color:#08921d;
+   text-decoration: underline; 
+}
+
+.container {
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.jogo_principal .container {
+    max-width: 65%;
+}
+
+.box_jogos {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel_jogos {
+    margin-top: 6px;
+}
